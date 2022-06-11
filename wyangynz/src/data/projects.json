@@ -1,0 +1,14 @@
+[
+	{
+		"title": "Nanna's Buddies",
+		"description": "Chatbot made to simulate a senior citizen helping to find company for other senior citizens.",
+		"technology": ["Javascript", "HTML", "CSS"],
+		"url": "https://nannasbuddies.netlify.app/"
+	},
+	{
+		"title": "Plants and Things",
+		"description": "Online shop for an independent ornamental plant business.",
+		"technology": ["HTML", "CSS"],
+		"url": "https://yoplants.netlify.app/"
+	}
+]
