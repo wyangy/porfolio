@@ -16,3 +16,15 @@ body {
 
 	grid-template-areas: "header" "main" "footer";
 }
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.article {
+	display: grid;
+	grid-template-rows: auto auto auto;
+
+	grid-template-areas: "h3" "img" "p" "button";
+}
