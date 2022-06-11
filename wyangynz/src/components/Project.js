@@ -1,6 +1,8 @@
-const Article = ({ title, image, description, technology, url }) => {
+// const Project = ({ title, image, description, technology, url }) => {
+const Project = ({ project }) => {
+	const { title, image, description, technology, url } = project;
 	return (
-		<li className="product-grid-item">
+		<li className="project">
 			<h3>{title}</h3>
 			<img src={image} alt={title} />
 			<p>{description}</p>
@@ -11,3 +13,5 @@ const Article = ({ title, image, description, technology, url }) => {
 		</li>
 	);
 };
+
+export default Project;
