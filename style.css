@@ -20,11 +20,44 @@ body {
 main {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+
+	max-width: 80rem;
+	margin: auto;
 }
 
 .article {
-	display: grid;
-	grid-template-rows: auto auto auto;
+	/* display: grid;
+	grid-template-rows: min-content min-content auto 2rem;
 
-	grid-template-areas: "h3" "img" "p" "button";
+	grid-template-areas: "h3" "img" "p" "button"; */
+
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	background: yellowgreen;
+}
+
+h3 {
+	background: lavender;
+}
+
+img {
+	max-width: 100%;
+	aspect-ratio: 16/9;
+	/* aspect-ratio: 4/3; */
+	/* object-fit: contain; */
+	object-fit: cover;
+	/* object-fit: scale-down; */
+}
+
+p {
+	/* min-height: 3rem; */
+	background: cyan;
+	padding-bottom: 1rem;
+	/* margin-bottom: 1rem; */
+}
+
+button {
+	margin-top: auto;
 }
