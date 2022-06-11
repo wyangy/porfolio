@@ -1,0 +1,18 @@
+* {
+	margin: 0; /* remove default margin from the browser */
+	padding: 0; /* remove default padding from the browser */
+	box-sizing: border-box;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: grid;
+	grid-template-rows: auto auto auto;
+
+	grid-template-areas: "header" "main" "footer";
+}
