@@ -9,3 +9,5 @@ const ProjectList = ({ projects }) => {
 		</ul>
 	);
 };
+
+export default ProjectList;
