@@ -1,5 +1,12 @@
 [
 	{
+		"title": "Goat Ice",
+		"image": "goat-ice.jpg",
+		"description": "Online ice cream shop made with React, HTML, CSS with payment system using Stripe.",
+		"technology": ["React", "Stripe", "Begin", "Javascript", "HTML", "CSS"],
+		"url": "https://goatice.netlify.app/"
+	},
+	{
 		"title": "Nanna's Buddies",
 		"image": "nannas-buddies.jpg",
 		"description": "Chatbot made to simulate a senior citizen helping to find company for other senior citizens.",
