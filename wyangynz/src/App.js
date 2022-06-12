@@ -7,7 +7,7 @@ const StyledApp = styled.div`
 	main {
 		max-width: 80rem;
 		margin: 0 auto;
-		padding: 0 1rem;
+		padding: 1rem 1rem 2rem;
 	}
 `;
 

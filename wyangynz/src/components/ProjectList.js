@@ -4,11 +4,11 @@ import styled from "styled-components";
 const StyledList = styled.ul`
 	list-style-type: none;
 	display: grid;
-	row-gap: 3rem;
+	row-gap: 4rem;
 
 	@media (min-width: 768px) {
 		grid-template-columns: 1fr 1fr;
-		column-gap: 2rem;
+		column-gap: 3rem;
 	}
 `;
 
