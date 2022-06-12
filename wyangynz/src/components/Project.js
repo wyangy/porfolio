@@ -1,22 +1,83 @@
 import styled from "styled-components";
 
 const StyledListItem = styled.li`
-	background: white;
-	/* background: hotpink; */
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
+	border: 1px solid white;
 
-	/* border: 1px solid #212121; */
-	/* border-top: 10px double #212121; */
-	/* border-left: 5px double #212121;
-	border-right: 5px double #212121; */
-	border-top: 10px solid #212121;
-	border-bottom: 6px solid #212121;
-	border-left: 1px solid #212121;
-	border-right: 1px solid #212121;
+	.project {
+		height: 100%;
+		background: #212121;
+		background: whitesmoke;
 
-	padding: 0 1.5rem 0 1.5rem;
+		background-size: 70% 70%;
+		/* background-image: radial-gradient(
+				circle at 100% 100%,
+				transparent 0,
+				transparent 12px,
+				white 13px
+			),
+			radial-gradient(
+				circle at 0 0,
+				transparent 0,
+				transparent 12px,
+				white 13px
+			),
+			radial-gradient(
+				circle at 100% 0,
+				transparent 0,
+				transparent 12px,
+				white 13px
+			),
+			radial-gradient(
+				circle at 0 100%,
+				transparent 0,
+				transparent 12px,
+				white 13px
+			); */
+		/* background-image: radial-gradient(
+				circle at 100% 100%,
+				transparent 0,
+				transparent 12px,
+				whitesmoke 13px
+			),
+			radial-gradient(
+				circle at 0 0,
+				transparent 0,
+				transparent 12px,
+				whitesmoke 13px
+			),
+			radial-gradient(
+				circle at 100% 0,
+				transparent 0,
+				transparent 12px,
+				whitesmoke 13px
+			),
+			radial-gradient(
+				circle at 0 100%,
+				transparent 0,
+				transparent 12px,
+				whitesmoke 13px
+			);
+		background-repeat: no-repeat;
+		background-position: right bottom, left top, right top, left bottom; */
+
+		/* background: linear-gradient(135deg, #212121 10px, white 0) top left,
+		linear-gradient(-135deg, #212121 10px, white 0) top right,
+		linear-gradient(-45deg, #212121 10px, white 0) bottom right,
+		linear-gradient(45deg, #212121 10px, white 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat; */
+
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		border-top: 12px solid #212121;
+		border-bottom: 8px solid #212121;
+		border-left: 2px solid #212121;
+		border-right: 2px solid #212121;
+
+		padding: 0 1.5rem 0 1.5rem;
+	}
 
 	.heading {
 		display: grid;
@@ -30,9 +91,13 @@ const StyledListItem = styled.li`
 		display: flex;
 		width: max-content;
 
-		padding: 1rem 1.5rem 0.8rem;
+		padding: 0.8rem 0.7rem 0.8rem;
 		border-left: 1px solid white;
 		border-right: 1px solid white;
+
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+		font-weight: 400;
 	}
 
 	.left-design-inner {
@@ -72,12 +137,13 @@ const StyledListItem = styled.li`
 	}
 
 	span {
-		margin-bottom: 1.5rem;
+		margin-bottom: 0.5rem;
 	}
 
 	button {
 		/* margin-top: auto; */
 		margin: auto auto 0;
+		/* margin-bottom: 1rem; */
 		background: #212121;
 		color: white;
 		text-transform: uppercase;
@@ -85,6 +151,9 @@ const StyledListItem = styled.li`
 		letter-spacing: 0.1rem;
 
 		padding: 0.8rem 1.5rem 0.2rem;
+		border-style: none;
+		/* border-left: 8px double white; */
+		/* border-right: 8px double white; */
 	}
 `;
 
@@ -92,21 +161,22 @@ const Project = ({ project }) => {
 	const { title, image, description, technology, url } = project;
 
 	return (
-		<StyledListItem className="project">
-			<div className="heading">
-				<div className="left-design-outer"></div>
-				<div className="left-design-inner"></div>
-				<h3>{title}</h3>
-				<div className="right-design-inner"></div>
-				<div className="right-design-outer"></div>
+		<StyledListItem>
+			<div className="project">
+				<div className="heading">
+					<div className="left-design-outer"></div>
+					<div className="left-design-inner"></div>
+					<h3>{title}</h3>
+					<div className="right-design-inner"></div>
+					<div className="right-design-outer"></div>
+				</div>
+				<img src={require(`../images/${image}`)} alt={title} />
+				<p>{description}</p>
+				<span>Technology: {technology.join(", ") + "."}</span>
+				<button onClick={() => window.open({ url }, "_blank")}>
+					view website
+				</button>
 			</div>
-			<img src={require(`../images/${image}`)} alt={title} />
-
-			<p>{description}</p>
-			<span>Technology: {technology.join(", ") + "."}</span>
-			<button onClick={() => window.open({ url }, "_blank")}>
-				view website
-			</button>
 		</StyledListItem>
 	);
 };
