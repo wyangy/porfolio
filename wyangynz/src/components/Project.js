@@ -1,71 +1,42 @@
 import styled from "styled-components";
 
 const StyledListItem = styled.li`
-	border: 1px solid white;
+	/* border: 1px solid white; */
+	/* background: magenta; */
+	background: linear-gradient(135deg, #212121 10px, whitesmoke 0) top left,
+		linear-gradient(-135deg, #212121 10px, whitesmoke 0) top right,
+		linear-gradient(-45deg, #212121 10px, whitesmoke 0) bottom right,
+		linear-gradient(45deg, #212121 10px, whitesmoke 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+
+	/* background: magenta; */
+	padding: 1px;
+
+	.border {
+		background: linear-gradient(135deg, whitesmoke 10px, #212121 0) top left,
+			linear-gradient(-135deg, whitesmoke 10px, #212121 0) top right,
+			linear-gradient(-45deg, whitesmoke 10px, #212121 0) bottom right,
+			linear-gradient(45deg, whitesmoke 10px, #212121 0) bottom left;
+		background-size: 50% 50%;
+		background-repeat: no-repeat;
+
+		padding: 10px;
+	}
 
 	.project {
+		/* margin: 1rem;
+		padding: 1rem; */
 		height: 100%;
 		background: #212121;
 		background: whitesmoke;
 
-		background-size: 70% 70%;
-		/* background-image: radial-gradient(
-				circle at 100% 100%,
-				transparent 0,
-				transparent 12px,
-				white 13px
-			),
-			radial-gradient(
-				circle at 0 0,
-				transparent 0,
-				transparent 12px,
-				white 13px
-			),
-			radial-gradient(
-				circle at 100% 0,
-				transparent 0,
-				transparent 12px,
-				white 13px
-			),
-			radial-gradient(
-				circle at 0 100%,
-				transparent 0,
-				transparent 12px,
-				white 13px
-			); */
-		/* background-image: radial-gradient(
-				circle at 100% 100%,
-				transparent 0,
-				transparent 12px,
-				whitesmoke 13px
-			),
-			radial-gradient(
-				circle at 0 0,
-				transparent 0,
-				transparent 12px,
-				whitesmoke 13px
-			),
-			radial-gradient(
-				circle at 100% 0,
-				transparent 0,
-				transparent 12px,
-				whitesmoke 13px
-			),
-			radial-gradient(
-				circle at 0 100%,
-				transparent 0,
-				transparent 12px,
-				whitesmoke 13px
-			);
+		background: linear-gradient(135deg, #212121 10px, whitesmoke 0) top left,
+			linear-gradient(-135deg, #212121 10px, whitesmoke 0) top right,
+			linear-gradient(-45deg, #212121 10px, whitesmoke 0) bottom right,
+			linear-gradient(45deg, #212121 10px, whitesmoke 0) bottom left;
+		background-size: 50% 50%;
 		background-repeat: no-repeat;
-		background-position: right bottom, left top, right top, left bottom; */
-
-		/* background: linear-gradient(135deg, #212121 10px, white 0) top left,
-		linear-gradient(-135deg, #212121 10px, white 0) top right,
-		linear-gradient(-45deg, #212121 10px, white 0) bottom right,
-		linear-gradient(45deg, #212121 10px, white 0) bottom left;
-	background-size: 50% 50%;
-	background-repeat: no-repeat; */
 
 		display: flex;
 		flex-direction: column;
@@ -162,20 +133,22 @@ const Project = ({ project }) => {
 
 	return (
 		<StyledListItem>
-			<div className="project">
-				<div className="heading">
-					<div className="left-design-outer"></div>
-					<div className="left-design-inner"></div>
-					<h3>{title}</h3>
-					<div className="right-design-inner"></div>
-					<div className="right-design-outer"></div>
+			<div className="border">
+				<div className="project">
+					<div className="heading">
+						<div className="left-design-outer"></div>
+						<div className="left-design-inner"></div>
+						<h3>{title}</h3>
+						<div className="right-design-inner"></div>
+						<div className="right-design-outer"></div>
+					</div>
+					<img src={require(`../images/${image}`)} alt={title} />
+					<p>{description}</p>
+					<span>Technology: {technology.join(", ") + "."}</span>
+					<button onClick={() => window.open({ url }, "_blank")}>
+						view website
+					</button>
 				</div>
-				<img src={require(`../images/${image}`)} alt={title} />
-				<p>{description}</p>
-				<span>Technology: {technology.join(", ") + "."}</span>
-				<button onClick={() => window.open({ url }, "_blank")}>
-					view website
-				</button>
 			</div>
 		</StyledListItem>
 	);
