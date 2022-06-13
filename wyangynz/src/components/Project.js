@@ -20,25 +20,12 @@ const StyledListItem = styled.li`
 	}
 
 	.content {
-		background: antiquewhite;
-		background: oldlace;
-		background: aliceblue;
-		background: azure;
-		background: blanchedalmond;
-		background: snow;
-		background: ghostwhite;
-		background: gainsboro;
-		background: wheat;
-		background: snow;
 		max-width: 35rem;
 		width: 100%;
 		margin: 0 auto;
 
 		display: flex;
 		flex-direction: column;
-
-		justify-items: center;
-		justify-content: center;
 		gap: 1rem;
 	}
 
@@ -47,7 +34,7 @@ const StyledListItem = styled.li`
 		grid-template-columns: auto min-content max-content min-content auto;
 		/* border-top: 2px solid #212121;
 		width: 80%; */
-		margin: 0 auto 2rem;
+		margin: 0 auto 2.5rem;
 		/* margin: 1rem 3rem 2rem; */
 		/* margin-bottom: 2rem; */
 	}
@@ -57,16 +44,24 @@ const StyledListItem = styled.li`
 		color: white;
 		display: flex;
 		/* min-width: 20rem; */
-		width: max-content;
-
-		padding: 0.8rem 3rem 0.8rem;
+		/* width: max-content; */
+		min-width: 13rem;
+		/* height: 3rem; */
+		/* padding: 1rem 3rem 1rem; */
+		padding: 0.7rem 3rem 0.7rem;
 		border-left: 2px solid snow;
 		border-right: 2px solid snow;
 
 		text-transform: uppercase;
+		/* align-self: center;
+		align-content: center; */
+		justify-content: center;
+		align-items: center;
 		/* text-align: center; */
-		letter-spacing: 0.1rem;
-		font-weight: 400;
+		letter-spacing: 0.2rem;
+		word-spacing: 0.3rem;
+		font-size: 24px;
+		font-weight: 300;
 	}
 
 	.left-design-inner {
@@ -103,6 +98,7 @@ const StyledListItem = styled.li`
 		/* margin: 0 auto;
 		display: block;
 		padding: 0 1rem; */
+		margin-bottom: 1rem;
 	}
 
 	p {
@@ -117,20 +113,16 @@ const StyledListItem = styled.li`
 	}
 
 	button {
-		/* margin-top: auto; */
 		margin: 2rem auto 0;
-		/* margin-bottom: 1rem; */
-		background: #212121;
+		padding: 1rem;
+		width: 15rem;
 		color: white;
 		text-transform: uppercase;
 		font-weight: 900;
 		letter-spacing: 0.1rem;
-		padding: 1rem 3rem;
 
-		/* padding: 0.8rem 1.5rem 0.2rem; */
 		border-style: none;
-		/* border-left: 8px double white; */
-		/* border-right: 8px double white; */
+
 		background: linear-gradient(135deg, snow 7px, #212121 0) top left,
 			linear-gradient(-135deg, snow 7px, #212121 0) top right,
 			linear-gradient(-45deg, snow 7px, #212121 0) bottom right,
