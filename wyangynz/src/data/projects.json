@@ -1,21 +1,35 @@
 [
 	{
+		"title": "Cat Couture",
+		"image": "cat-couture.png",
+		"description": "Online avant-garde cat fashion boutique store made with React, HTML, CSS with backend handled by SQL and Heroku.",
+		"technology": ["React", "Heroku", "SQL", "Javascript", "HTML", "CSS"],
+		"url": "https://catcouture.netlify.app/"
+	},
+	{
+		"title": "Reservationizr",
+		"image": "reservationizr.png",
+		"description": "Online restaurant reservation website made with React, HTML, CSS with backend handled by MongoDB and Heroku.",
+		"technology": ["React", "Heroku", "MongoDB", "Javascript", "HTML", "CSS"],
+		"url": "https://reservation-izr.netlify.app/"
+	},
+	{
 		"title": "Goat Ice",
-		"image": "goat-ice.jpg",
+		"image": "goat-ice.png",
 		"description": "Online ice cream shop made with React, HTML, CSS with payment system using Stripe.",
 		"technology": ["React", "Stripe", "Begin", "Javascript", "HTML", "CSS"],
 		"url": "https://goatice.netlify.app/"
 	},
 	{
 		"title": "Nanna's Buddies",
-		"image": "nannas-buddies.jpg",
+		"image": "nannas-buddies.png",
 		"description": "Chatbot made to simulate a senior citizen helping to find company for other senior citizens.",
 		"technology": ["Javascript", "HTML", "CSS"],
 		"url": "https://nannasbuddies.netlify.app/"
 	},
 	{
 		"title": "Plants and Things",
-		"image": "plants-and-things.jpg",
+		"image": "plants-and-things.png",
 		"description": "Online shop for an independent ornamental plant business.",
 		"technology": ["HTML", "CSS"],
 		"url": "https://yoplants.netlify.app/"

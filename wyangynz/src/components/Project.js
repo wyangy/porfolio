@@ -27,6 +27,9 @@ const StyledListItem = styled.li`
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
+
+		font-size: 18px;
+		/* font-weight: 400; */
 	}
 
 	.heading {
@@ -58,7 +61,7 @@ const StyledListItem = styled.li`
 		justify-content: center;
 		align-items: center;
 		/* text-align: center; */
-		letter-spacing: 0.2rem;
+		letter-spacing: 0.3rem;
 		word-spacing: 0.3rem;
 		font-size: 24px;
 		font-weight: 300;
@@ -104,12 +107,14 @@ const StyledListItem = styled.li`
 	p {
 		/* margin-bottom: 1.5rem; */
 		/* padding: 0 3rem; */
+		line-height: 1.4;
 	}
 
 	span {
 		/* width: 100%; */
 		/* margin-bottom: 0.5rem; */
 		/* padding: 0 3rem; */
+		font-style: italic;
 	}
 
 	button {
@@ -119,7 +124,8 @@ const StyledListItem = styled.li`
 		color: white;
 		text-transform: uppercase;
 		font-weight: 900;
-		letter-spacing: 0.1rem;
+		letter-spacing: 0.15rem;
+		word-spacing: 0.2rem;
 
 		border-style: none;
 

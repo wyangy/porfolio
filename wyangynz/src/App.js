@@ -5,7 +5,7 @@ import ProjectList from "./components/ProjectList";
 
 const StyledApp = styled.div`
 	main {
-		max-width: 60rem;
+		max-width: 1024px;
 		margin: 0 auto;
 		padding: 1rem 1rem 2rem;
 	}
