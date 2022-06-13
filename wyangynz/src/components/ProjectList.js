@@ -4,12 +4,12 @@ import styled from "styled-components";
 const StyledList = styled.ul`
 	list-style-type: none;
 	display: grid;
-	row-gap: 4rem;
+	row-gap: 5rem;
 
-	@media (min-width: 768px) {
+	/* @media (min-width: 768px) {
 		grid-template-columns: 1fr 1fr;
 		column-gap: 3rem;
-	}
+	} */
 `;
 
 const ProjectList = ({ projects }) => {

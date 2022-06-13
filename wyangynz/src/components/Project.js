@@ -1,72 +1,76 @@
 import styled from "styled-components";
 
 const StyledListItem = styled.li`
-	/* border: 1px solid white; */
-	/* background: magenta; */
-	background: linear-gradient(135deg, #212121 10px, whitesmoke 0) top left,
-		linear-gradient(-135deg, #212121 10px, whitesmoke 0) top right,
-		linear-gradient(-45deg, #212121 10px, whitesmoke 0) bottom right,
-		linear-gradient(45deg, #212121 10px, whitesmoke 0) bottom left;
+	background: linear-gradient(150deg, #212121 15px, whitesmoke 0) top left,
+		linear-gradient(-150deg, #212121 15px, whitesmoke 0) top right,
+		linear-gradient(-30deg, #212121 15px, whitesmoke 0) bottom right,
+		linear-gradient(30deg, #212121 15px, whitesmoke 0) bottom left;
 	background-size: 50% 50%;
 	background-repeat: no-repeat;
 
-	/* background: magenta; */
-	padding: 1px;
+	display: flex;
+	justify-content: center;
 
 	.border {
-		background: linear-gradient(135deg, whitesmoke 10px, #212121 0) top left,
-			linear-gradient(-135deg, whitesmoke 10px, #212121 0) top right,
-			linear-gradient(-45deg, whitesmoke 10px, #212121 0) bottom right,
-			linear-gradient(45deg, whitesmoke 10px, #212121 0) bottom left;
-		background-size: 50% 50%;
-		background-repeat: no-repeat;
-
-		padding: 10px;
+		border-top: 2px solid #212121;
+		border-bottom: 2px solid #212121;
+		width: 80%;
+		margin: 1rem 1rem 2rem;
+		padding-bottom: 1rem;
 	}
 
-	.project {
+	.content {
 		/* margin: 1rem;
-		padding: 1rem; */
-		height: 100%;
-		background: #212121;
-		background: whitesmoke;
-
-		background: linear-gradient(135deg, #212121 10px, whitesmoke 0) top left,
-			linear-gradient(-135deg, #212121 10px, whitesmoke 0) top right,
-			linear-gradient(-45deg, #212121 10px, whitesmoke 0) bottom right,
-			linear-gradient(45deg, #212121 10px, whitesmoke 0) bottom left;
-		background-size: 50% 50%;
-		background-repeat: no-repeat;
+		/* padding: 1rem; */
+		/* height: 100%; */
+		/* width: auto; */
+		/* margin: 2rem; */
+		/* padding: 2rem; */
+		max-width: 35rem;
+		width: 100%;
+		margin: 0 auto;
+		/* padding: 1rem 2rem 0; */
+		/* border: 1px solid red; */
+		/* background: cyan; */
 
 		display: flex;
 		flex-direction: column;
+		/* align-self: center; */
+		/* justify-self: center; */
+		/* display: grid; */
+		/* align-items: center; */
+		justify-items: center;
+		justify-content: center;
 		gap: 1rem;
 
-		border-top: 12px solid #212121;
-		border-bottom: 8px solid #212121;
-		border-left: 2px solid #212121;
-		border-right: 2px solid #212121;
-
-		padding: 0 1.5rem 0 1.5rem;
+		/* padding: 0 1.5rem 0 1.5rem; */
+		/* border-bottom: 2px solid #212121;
+		margin-bottom: 1rem; */
 	}
 
 	.heading {
 		display: grid;
 		grid-template-columns: auto min-content max-content min-content auto;
-		margin-bottom: 0.5rem;
+		/* border-top: 2px solid #212121;
+		width: 80%; */
+		margin: 0 auto 2rem;
+		/* margin: 1rem 3rem 2rem; */
+		/* margin-bottom: 2rem; */
 	}
 
 	h3 {
 		background: #212121;
 		color: white;
 		display: flex;
+		/* min-width: 20rem; */
 		width: max-content;
 
-		padding: 0.8rem 0.7rem 0.8rem;
-		border-left: 1px solid white;
-		border-right: 1px solid white;
+		padding: 0.8rem 3rem 0.8rem;
+		border-left: 2px solid whitesmoke;
+		border-right: 2px solid whitesmoke;
 
 		text-transform: uppercase;
+		/* text-align: center; */
 		letter-spacing: 0.1rem;
 		font-weight: 400;
 	}
@@ -76,12 +80,12 @@ const StyledListItem = styled.li`
 		height: 2rem;
 		width: 0.5em;
 		justify-self: right;
-		border-left: 1px solid white;
+		border-left: 1px solid whitesmoke;
 	}
 
 	.left-design-outer {
 		background: #212121;
-		height: 0.8rem;
+		height: 1rem;
 		width: 0.3rem;
 		justify-self: right;
 	}
@@ -90,25 +94,32 @@ const StyledListItem = styled.li`
 		background: #212121;
 		height: 2rem;
 		width: 0.5em;
-		border-right: 1px solid white;
+		border-right: 1px solid whitesmoke;
 	}
 
 	.right-design-outer {
 		background: #212121;
-		height: 0.8rem;
+		height: 1rem;
 		width: 0.3rem;
 	}
 
 	img {
-		max-width: 100%;
+		max-width: 40rem;
+		width: 100%;
+		/* margin: 0 auto;
+		display: block;
+		padding: 0 1rem; */
 	}
 
 	p {
 		/* margin-bottom: 1.5rem; */
+		/* padding: 0 3rem; */
 	}
 
 	span {
+		/* width: 100%; */
 		margin-bottom: 0.5rem;
+		/* padding: 0 3rem; */
 	}
 
 	button {
@@ -120,11 +131,18 @@ const StyledListItem = styled.li`
 		text-transform: uppercase;
 		font-weight: 900;
 		letter-spacing: 0.1rem;
+		padding: 1rem 2rem;
 
-		padding: 0.8rem 1.5rem 0.2rem;
+		/* padding: 0.8rem 1.5rem 0.2rem; */
 		border-style: none;
 		/* border-left: 8px double white; */
 		/* border-right: 8px double white; */
+		background: linear-gradient(135deg, whitesmoke 10px, #212121 0) top left,
+			linear-gradient(-135deg, whitesmoke 10px, #212121 0) top right,
+			linear-gradient(-45deg, whitesmoke 10px, #212121 0) bottom right,
+			linear-gradient(45deg, whitesmoke 10px, #212121 0) bottom left;
+		background-size: 50% 50%;
+		background-repeat: no-repeat;
 	}
 `;
 
@@ -134,15 +152,16 @@ const Project = ({ project }) => {
 	return (
 		<StyledListItem>
 			<div className="border">
-				<div className="project">
-					<div className="heading">
-						<div className="left-design-outer"></div>
-						<div className="left-design-inner"></div>
-						<h3>{title}</h3>
-						<div className="right-design-inner"></div>
-						<div className="right-design-outer"></div>
-					</div>
+				<div className="heading">
+					<div className="left-design-outer"></div>
+					<div className="left-design-inner"></div>
+					<h3>{title}</h3>
+					<div className="right-design-inner"></div>
+					<div className="right-design-outer"></div>
+				</div>
+				<div className="content">
 					<img src={require(`../images/${image}`)} alt={title} />
+
 					<p>{description}</p>
 					<span>Technology: {technology.join(", ") + "."}</span>
 					<button onClick={() => window.open({ url }, "_blank")}>
