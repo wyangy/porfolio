@@ -16,7 +16,7 @@ const StyledListItem = styled.li`
 		border-top: 2px solid #212121;
 		border-bottom: 2px solid #212121;
 		width: 80%;
-		margin: 1rem 1rem 2rem;
+		margin: 2rem 1rem 2rem;
 		padding-bottom: 1rem;
 	}
 
@@ -29,7 +29,11 @@ const StyledListItem = styled.li`
 		flex-direction: column;
 		gap: 1rem;
 
-		font-size: 18px;
+		font-size: 16px;
+
+		@media (min-width: 600px) {
+			font-size: 18px;
+		}
 	}
 
 	img {

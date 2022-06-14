@@ -10,18 +10,33 @@ const StyledHeading = styled.div`
 		justify-content: center;
 		align-items: center;
 
-		min-width: 13rem;
-		padding: 0.7rem 3rem;
+		padding: 0.7rem 0.5rem;
 		border-left: 2px solid snow;
 		border-right: 2px solid snow;
 
 		background: #212121;
 		color: white;
 		text-transform: uppercase;
-		letter-spacing: 0.3rem;
-		word-spacing: 0.3rem;
-		font-size: 24px;
+
+		font-size: 20px;
 		font-weight: 400;
+		letter-spacing: 0.05rem;
+
+		@media (min-width: 600px) {
+			/* min-width: 13rem; */
+			/* font-size: 22px; */
+			padding: 0.7rem 1.5rem;
+			letter-spacing: 0.3rem;
+			word-spacing: 0.3rem;
+		}
+
+		@media (min-width: 800px) {
+			min-width: 13rem;
+			font-size: 24px;
+			padding: 0.7rem 3rem;
+			/* letter-spacing: 0.3rem; */
+			/* word-spacing: 0.3rem; */
+		}
 	}
 
 	.heading-left-inner {
