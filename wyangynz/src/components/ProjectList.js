@@ -5,6 +5,10 @@ const StyledList = styled.ul`
 	list-style-type: none;
 	display: grid;
 	grid-gap: 5rem;
+
+	@media (min-width: 800px) {
+		grid-gap: 7rem;
+	}
 `;
 
 const ProjectList = ({ projects }) => {

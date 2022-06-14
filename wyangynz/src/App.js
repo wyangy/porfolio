@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import projectsJSON from "./data/projects.json";
 import ProjectList from "./components/ProjectList";
+import Header from "./components/Header";
 
 const StyledApp = styled.div`
 	main {
@@ -16,11 +17,10 @@ function App() {
 
 	return (
 		<StyledApp>
-			<header>
-				<main>
-					<ProjectList projects={projects} />
-				</main>
-			</header>
+			<Header />
+			<main>
+				<ProjectList projects={projects} />
+			</main>
 		</StyledApp>
 	);
 }

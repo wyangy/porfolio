@@ -20,9 +20,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #212121;
-  /* background: grey; */
-  /* background: #3A3B3D; */
-  /* background: #212121; */
+  color: #212121;
+  /* color: yellowgreen; */
 }
 
 code {
