@@ -62,6 +62,7 @@ const StyledListItem = styled.li`
 		word-spacing: 0.2rem;
 
 		border-style: none;
+
 		background: linear-gradient(135deg, snow 7px, #212121 0) top left,
 			linear-gradient(-135deg, snow 7px, #212121 0) top right,
 			linear-gradient(-45deg, snow 7px, #212121 0) bottom right,

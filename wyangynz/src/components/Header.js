@@ -11,10 +11,12 @@ const StyledHeader = styled.header`
 		margin-bottom: 3rem;
 
 		@media (min-width: 600px) {
+			padding: 4rem 0 2rem;
 			margin-bottom: 4rem;
 		}
 
 		@media (min-width: 1024px) {
+			padding: 5rem 0 3rem;
 			margin-bottom: 5rem;
 		}
 	}
@@ -37,6 +39,11 @@ const StyledHeader = styled.header`
 		@media (min-width: 1024px) {
 			font-size: 100px;
 			font-weight: 100;
+			letter-spacing: 0.9rem;
+		}
+
+		@media (min-width: 1280px) {
+			font-size: 110px;
 		}
 	}
 
