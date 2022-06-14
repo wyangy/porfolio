@@ -73,19 +73,9 @@ const Project = ({ project }) => {
 	return (
 		<StyledListItem>
 			<div className="border">
-				{/* <div className="heading">
-					<div className="heading-left-edge" />
-					<div className="heading-left-outer" />
-					<div className="heading-left-inner" />
-					<h3>{title}</h3>
-					<div className="heading-right-inner" />
-					<div className="heading-right-outer" />
-					<div className="heading-right-edge" />
-				</div> */}
-				<Heading>{title}</Heading>
+				<Heading text={title} />
 				<div className="content">
 					<img src={require(`../images/${image}`)} alt={title} />
-
 					<p>{description}</p>
 					<span>Technology: {technology.join(", ") + "."}</span>
 					<button onClick={() => window.open({ url }, "_blank")}>

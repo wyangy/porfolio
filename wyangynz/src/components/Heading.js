@@ -11,7 +11,7 @@ const StyledHeading = styled.div`
 		align-items: center;
 
 		min-width: 13rem;
-		padding: 0.7rem 3rem 0.7rem;
+		padding: 0.7rem 3rem;
 		border-left: 2px solid snow;
 		border-right: 2px solid snow;
 
@@ -68,13 +68,13 @@ const StyledHeading = styled.div`
 	}
 `;
 
-const Heading = ({ children }) => {
+const Heading = ({ text }) => {
 	return (
 		<StyledHeading>
 			<div className="heading-left-edge" />
 			<div className="heading-left-outer" />
 			<div className="heading-left-inner" />
-			<h2>{children}</h2>
+			<h2>{text}</h2>
 			<div className="heading-right-inner" />
 			<div className="heading-right-outer" />
 			<div className="heading-right-edge" />
