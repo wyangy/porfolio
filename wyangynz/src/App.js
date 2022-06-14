@@ -16,7 +16,7 @@ function App() {
 
 	return (
 		<StyledApp>
-			<header className="App-header">
+			<header>
 				<main>
 					<ProjectList projects={projects} />
 				</main>
