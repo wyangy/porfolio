@@ -6,9 +6,16 @@ import Header from "./components/Header";
 
 const StyledApp = styled.div`
 	main {
-		max-width: 1024px;
 		margin: 0 auto;
 		padding: 1rem 1rem 2rem;
+
+		@media (min-width: 600px) {
+			padding: 1rem 2rem 2rem;
+		}
+
+		@media (min-width: 1024px) {
+			max-width: 1024px;
+		}
 	}
 `;
 

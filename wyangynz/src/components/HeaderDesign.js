@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledHeaderDesign = styled.header`
+const StyledHeaderDesign = styled.div`
 	.border1 {
 		background: snow;
 		clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 81% 100%, 19% 100%, 0% 60%);
