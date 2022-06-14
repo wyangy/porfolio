@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Heading from "./Heading";
 
 const StyledListItem = styled.li`
 	background: linear-gradient(150deg, #212121 15px, snow 0) top left,
@@ -29,74 +30,6 @@ const StyledListItem = styled.li`
 		gap: 1rem;
 
 		font-size: 18px;
-	}
-
-	.heading {
-		display: grid;
-		grid-template-columns: auto min-content min-content max-content min-content min-content auto;
-		margin: 0 auto 2.5rem;
-	}
-
-	h3 {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		min-width: 13rem;
-		padding: 0.7rem 3rem 0.7rem;
-		border-left: 2px solid snow;
-		border-right: 2px solid snow;
-
-		background: #212121;
-		color: white;
-		text-transform: uppercase;
-		letter-spacing: 0.3rem;
-		word-spacing: 0.3rem;
-		font-size: 24px;
-		font-weight: 400;
-	}
-
-	.heading-left-inner {
-		background: #212121;
-		height: 2.3rem;
-		width: 0.5em;
-		justify-self: right;
-		border-left: 2px solid snow;
-	}
-
-	.heading-left-outer {
-		background: #212121;
-		height: 1.4rem;
-		width: 0.4rem;
-		justify-self: right;
-		border-left: 2px solid snow;
-	}
-
-	.heading-left-edge {
-		background: #212121;
-		height: 0.6rem;
-		width: 0.2rem;
-		justify-self: right;
-	}
-
-	.heading-right-inner {
-		background: #212121;
-		height: 2.3rem;
-		width: 0.5em;
-		border-right: 2px solid snow;
-	}
-
-	.heading-right-outer {
-		background: #212121;
-		height: 1.4rem;
-		width: 0.4rem;
-		border-right: 2px solid snow;
-	}
-
-	.heading-right-edge {
-		background: #212121;
-		height: 0.6rem;
-		width: 0.2rem;
 	}
 
 	img {
@@ -140,7 +73,7 @@ const Project = ({ project }) => {
 	return (
 		<StyledListItem>
 			<div className="border">
-				<div className="heading">
+				{/* <div className="heading">
 					<div className="heading-left-edge" />
 					<div className="heading-left-outer" />
 					<div className="heading-left-inner" />
@@ -148,7 +81,8 @@ const Project = ({ project }) => {
 					<div className="heading-right-inner" />
 					<div className="heading-right-outer" />
 					<div className="heading-right-edge" />
-				</div>
+				</div> */}
+				<Heading>{title}</Heading>
 				<div className="content">
 					<img src={require(`../images/${image}`)} alt={title} />
 
