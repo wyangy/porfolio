@@ -2,21 +2,21 @@
 	{
 		"title": "Cat Couture",
 		"image": "cat-couture.png",
-		"description": "Online avant-garde cat fashion boutique store made with React, HTML, CSS with backend handled by SQL and Heroku.",
+		"description": "Online avant-garde cat fashion boutique store.",
 		"technology": ["React", "Heroku", "SQL", "Javascript", "HTML", "CSS"],
 		"url": "https://catcouture.netlify.app/"
 	},
 	{
 		"title": "Reservationizr",
 		"image": "reservationizr.png",
-		"description": "Online restaurant reservation website made with React, HTML, CSS with backend handled by MongoDB and Heroku.",
+		"description": "Online restaurant reservation website with backend handled by MongoDB and Heroku.",
 		"technology": ["React", "Heroku", "MongoDB", "Javascript", "HTML", "CSS"],
 		"url": "https://reservation-izr.netlify.app/"
 	},
 	{
 		"title": "Goat Ice",
 		"image": "goat-ice.png",
-		"description": "Online ice cream shop made with React, HTML, CSS with payment system using Stripe.",
+		"description": "Online ice cream shop made with payment system using Stripe.",
 		"technology": ["React", "Stripe", "Begin", "Javascript", "HTML", "CSS"],
 		"url": "https://goat-ice.netlify.app/"
 	},

@@ -60,7 +60,7 @@ const StyledListItem = styled.li`
 		font-style: italic;
 	}
 
-	a {
+	.button a {
 		margin: 1.5rem auto 0;
 		padding: 1rem;
 		width: 13rem;
@@ -91,10 +91,18 @@ const Project = ({ project }) => {
 			<div className="border">
 				<Heading text={title} />
 				<div className="content">
-					<img src={require(`../images/${image}`)} alt={title} />
+					<a
+						href={url}
+						target="_blank"
+						rel="noreferrer"
+						title={`link to ${title}`}
+					>
+						<img src={require(`../images/${image}`)} alt={title} />
+					</a>
 					<p>{description}</p>
 					<span>Technology: {technology.join(", ") + "."}</span>
 					<a
+						className="button"
 						title={`link to ${title}`}
 						href={url}
 						target="_blank"
