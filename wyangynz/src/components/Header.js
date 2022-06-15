@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import HeaderDesign from "./HeaderDesign";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const StyledHeader = styled.header`
 	.content {
@@ -58,7 +61,11 @@ const Header = () => {
 				<div className="content">
 					<h1>Wendy Yang</h1>
 					<p>Full-stack web developer</p>
-					<div className="icons">BLOB BLOB BLOB</div>
+					<div className="icons">
+						<FontAwesomeIcon icon={faLinkedin} />
+						<FontAwesomeIcon icon={faGithub} />
+						<FontAwesomeIcon icon={faEnvelope} />
+					</div>
 				</div>
 			</HeaderDesign>
 		</StyledHeader>
