@@ -60,7 +60,7 @@ const StyledListItem = styled.li`
 		font-style: italic;
 	}
 
-	.button a {
+	a.button {
 		margin: 1.5rem auto 0;
 		padding: 1rem;
 		width: 13rem;
