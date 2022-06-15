@@ -51,17 +51,18 @@ const StyledListItem = styled.li`
 		font-style: italic;
 	}
 
-	button {
+	a {
 		margin: 1.5rem auto 0;
 		padding: 1rem;
-		width: 15rem;
+		width: 13rem;
 		color: white;
 		text-transform: uppercase;
+		font-size: 14px;
 		font-weight: 900;
-		letter-spacing: 0.15rem;
+		text-decoration: none;
+		text-align: center;
+		letter-spacing: 0.1rem;
 		word-spacing: 0.2rem;
-
-		border-style: none;
 
 		background: linear-gradient(135deg, snow 7px, #212121 0) top left,
 			linear-gradient(-135deg, snow 7px, #212121 0) top right,
@@ -83,9 +84,14 @@ const Project = ({ project }) => {
 					<img src={require(`../images/${image}`)} alt={title} />
 					<p>{description}</p>
 					<span>Technology: {technology.join(", ") + "."}</span>
-					<button onClick={() => window.open({ url }, "_blank")}>
+					<a
+						title={`link to ${title}`}
+						href={url}
+						target="_blank"
+						rel="noreferrer"
+					>
 						view website
-					</button>
+					</a>
 				</div>
 			</div>
 		</StyledListItem>
