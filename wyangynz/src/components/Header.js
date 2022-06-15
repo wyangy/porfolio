@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
 	.content {
 		display: grid;
 		justify-items: center;
-		grid-gap: 0.7rem;
+		grid-gap: 1rem;
 
 		padding: 3rem 0 2rem;
 		margin-bottom: 3rem;
@@ -51,6 +51,25 @@ const StyledHeader = styled.header`
 	}
 
 	p {
+		font-style: italic;
+
+		@media (min-width: 600px) {
+			font-size: 20px;
+		}
+	}
+
+	.icons {
+		display: flex;
+		gap: 1rem;
+		font-size: 22px;
+
+		@media (min-width: 600px) {
+			font-size: 30px;
+		}
+	}
+
+	.icons a {
+		color: #212121;
 	}
 `;
 
@@ -60,11 +79,27 @@ const Header = () => {
 			<HeaderDesign>
 				<div className="content">
 					<h1>Wendy Yang</h1>
-					<p>Full-stack web developer</p>
+					<p>Full-stack Web Developer</p>
 					<div className="icons">
-						<FontAwesomeIcon icon={faLinkedin} />
-						<FontAwesomeIcon icon={faGithub} />
-						<FontAwesomeIcon icon={faEnvelope} />
+						<a
+							title="link to LinkedIn"
+							href="https://www.linkedin.com/in/wyangynz/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<FontAwesomeIcon icon={faLinkedin} />
+						</a>
+						<a
+							title="link to GitHub"
+							href="https://github.com/wyangy"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<FontAwesomeIcon icon={faGithub} />
+						</a>
+						<a href="mailto: wyangynz@gmail.com">
+							<FontAwesomeIcon icon={faEnvelope} />
+						</a>
 					</div>
 				</div>
 			</HeaderDesign>
