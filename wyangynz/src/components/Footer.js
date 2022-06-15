@@ -11,16 +11,16 @@ const StyledFooter = styled.header`
 		grid-gap: 1rem;
 
 		padding: 3rem 0 2rem;
-		margin-bottom: 3rem;
+		margin-top: 3rem;
 
 		@media (min-width: 600px) {
 			padding: 4rem 0 2rem;
-			margin-bottom: 4rem;
+			margin-top: 4rem;
 		}
 
 		@media (min-width: 1024px) {
 			padding: 5rem 0 3rem;
-			margin-bottom: 5rem;
+			margin-top: 5rem;
 		}
 	}
 
@@ -78,8 +78,8 @@ const Footer = () => {
 		<StyledFooter>
 			<FooterDesign>
 				<div className="content">
-					<h1>Wendy Yang</h1>
-					<p>Full-stack Web Developer</p>
+					{/* <h1>Wendy Yang</h1> */}
+					{/* <p>Full-stack Web Developer</p> */}
 					<div className="icons">
 						<a
 							title="link to LinkedIn"
