@@ -41,6 +41,15 @@ const StyledListItem = styled.li`
 		width: 100%;
 		margin-bottom: 1rem;
 		border-radius: 0.5rem;
+
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+	}
+
+	img:hover,
+	:focus {
+		filter: none;
+		-webkit-filter: grayscale(0);
 	}
 
 	p {
@@ -55,10 +64,11 @@ const StyledListItem = styled.li`
 		margin: 1.5rem auto 0;
 		padding: 1rem;
 		width: 13rem;
-		color: white;
-		text-transform: uppercase;
+
 		font-size: 14px;
 		font-weight: 900;
+		color: white;
+		text-transform: uppercase;
 		text-decoration: none;
 		text-align: center;
 		letter-spacing: 0.1rem;
